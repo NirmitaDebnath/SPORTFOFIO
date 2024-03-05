@@ -10,13 +10,15 @@ html {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 250px;
 }
 
 body {
   background-color: black;
   color: rgb(255, 194, 64);
+  margin-top: 120px; /* Adjust for the fixed header */
+  margin-bottom: 40px; /* Adjust for the fixed footer */
 }
 
 .title {
@@ -25,22 +27,29 @@ body {
 }
 
 header {
-  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   height: 120px;
+  background-color: black;
+  color: rgb(255, 194, 64);
 }
 
 nav ul {
   display: flex;
-  margin: 30px 0;
+  margin: 30px;
 }
 
 nav ul li {
   list-style: none;
   padding: 20px;
+  text-align: right;
 }
 
 .logo {
-  padding: 20px 0;
+  padding: 20px 0 0 40px;
   font-weight: bolder;
   font-size: 50px;
   color: rgb(1, 255, 225);
@@ -52,7 +61,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-weight: bold;
+  
+  font-size: large;
   color: rgb(1, 255, 225);
   cursor: pointer;
 }
@@ -62,23 +72,21 @@ nav ul li a:hover {
 }
 
 .left {
-  margin: 100px 0;
+  margin: 80px 0;
   padding: 20px;
-  font-size: 50px;
+  font-size: 50px;  
 }
-
-div.right {
-  margin: 40px 0;
-  padding: 20px;
-}
-
 .hi {
   display: flex;
   justify-content: space-around;
+  background-color: rgb(26, 25, 25);
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
 }
 
 .nd {
-  width: 500px;
+  width: 400px;
 }
 
 section {
@@ -164,30 +172,14 @@ div.right1 {
 }
 
 footer {
-  height: 80px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left2 {
-  width: 70%;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.left2 a {
-  padding: 20px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.left2 a:hover {
-  transform: scale(1.2);
-}
-
-footer p {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 40px;
+  background-color: black;
+  color: rgb(255, 194, 64);
   text-align: center;
 }
 
@@ -318,25 +310,5 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .left2 {
-    width: 70%;
-    margin: 20px;
-    display: block;
-    justify-content: center;
-  }
-
-  .left2 a {
-    padding: 20px;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .left2 a:hover {
-    transform: scale(1.2);
-  }
-
-  footer p {
-    text-align: center;
   }
 }
