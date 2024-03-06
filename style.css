@@ -20,6 +20,9 @@ body {
   margin-top: 120px; /* Adjust for the fixed header */
   margin-bottom: 40px; /* Adjust for the fixed footer */
 }
+.cr{
+  color: rgb(255, 194, 64);
+}
 
 .title {
   margin: 20px;
@@ -68,13 +71,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff0090;
+  color: rgb(255, 194, 64);
 }
 
 .left {
   margin: 80px 0;
   padding: 20px;
   font-size: 50px;  
+  color: cyan;
 }
 .hi {
   display: flex;
